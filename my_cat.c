@@ -15,7 +15,7 @@ int main (int argc, char **argv)
         if( fp == NULL)
         {
             fprintf(stderr, "fopen: Could not open '%s': %s", argv[i], strerror(errno));
-            fputs("\nCross fingers and continue", stderr);
+            fputs("\nCross fingers and continue\n", stderr);
             break;
         }
 
@@ -39,7 +39,7 @@ int main (int argc, char **argv)
 
     if(i==1)
     {
-        fprintf(stderr, "no arguments found, enter file names!");
+        fprintf(stderr, "no arguments found, enter file names!\n");
     }
  
     return 0;
